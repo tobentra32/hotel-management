@@ -1,5 +1,5 @@
 import { getApartments } from './services/blockchain';
-import { Category, Collection } from './components/index';
+import Category from './components/Category';
 
 export default async function Home() {
 
