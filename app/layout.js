@@ -22,12 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
-      <body className="antialiased">
-        
-          <Header />
+      <body className="antialiased"> 
+        <Header />
           {children}
-          <Footer />
-
+        <Footer />
       </body>
     </html>
   );
