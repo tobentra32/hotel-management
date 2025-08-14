@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Category, Collection } from "./components";
+import { Category } from "./components/Category";
 
 export default function Home() {
   return (
