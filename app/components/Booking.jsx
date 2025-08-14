@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { useAppKitAccount } from '@reown/appkit/react'
+//import { useAppKitAccount } from '@reown/appkit/react'
 import { toast } from 'react-toastify'
 import Identicon from 'react-identicons'
 import { formatDate, truncate } from '../utils/helper'
@@ -8,7 +8,7 @@ import { checkInApartment, refundBooking } from '../services/blockchain'
 
 
 const Booking = ({ booking }) => {
-  const { address } = useAppKitAccount()
+  //const { address } = useAppKitAccount()
 
   const handleCheckIn = async () => {
     await toast.promise(

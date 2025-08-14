@@ -5,8 +5,8 @@ import { globalActions } from '../store/globalSlices'
 import address from '../contract_details/contractAddress.json'
 import rentdappApi from '../contract_details/contractAbi.json'
 
-import { useAppKitProvider, useAppKitAccount } from "@reown/appkit/react";
-import { BrowserProvider, Contract, parseEther, formatUnits } from "ethers";
+//import { useAppKitProvider, useAppKitAccount } from "@reown/appkit/react";
+//import { BrowserProvider, Contract, parseEther, formatUnits } from "ethers";
 
 
 const toWei = (num) => ethers.parseEther(num.toString())
