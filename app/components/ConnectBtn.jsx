@@ -3,7 +3,7 @@
 const ConnectBtn = () => {
   return (
     <div >
-        <appkit-button />
+        <button>Connect Wallet</button>
     </div>
   )
 }

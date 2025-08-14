@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       <body className="antialiased">
-        <ContextProvider>
+        
           <Header />
           {children}
           <Footer />
-        </ContextProvider>
+
       </body>
     </html>
   );
