@@ -1,15 +1,13 @@
 "use client"
 import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
-import { useAppKitProvider, useAppKitAccount } from "@reown/appkit/react"
 import { toast } from 'react-toastify'
 import { useRouter } from 'next/navigation'
 import { createApartment } from '../services/blockchain'
 
 export default function Add() {
 
-  const { address, caipAddress, isConnected } = useAppKitAccount();
-  const { walletProvider } = useAppKitProvider('eip155');
+  const [address, setAddress] = useState(''); // Placeholder for address
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [location, setLocation] = useState('');
