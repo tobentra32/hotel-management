@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ContextProvider from './context';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -23,9 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
       <body className="antialiased"> 
-        <Header />
+        <ContextProvider>
+          <Header />
           {children}
-        <Footer />
+          <Footer />
+        </ContextProvider>
       </body>
     </html>
   );
